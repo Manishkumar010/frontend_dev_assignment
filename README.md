@@ -1,87 +1,104 @@
-# Frontend Developer Intern Assignment  
+# 🛠️ SolveEase - Frontend Assignment
 
-## Mandatory Tasks
-- Follow SolveEase on [Github](https://github.com/solve-ease) and [Linkedin](https://www.linkedin.com/company/solve-ease)
-- Star this repo
-
-## Objective  
-This assignment is designed to assess your practical skills in **React, Next.js, TypeScript, Tailwind CSS, and frontend optimizations**. You will work on an existing **Next.js application** that contains layout/design issues and some configuration bugs. Your task is to identify and resolve these issues, and implement the listed features to enhance the overall user experience. 
+This project is a **frontend assignment** built as part of the SolveEase Frontend Developer hiring process.
+The goal was to enhance the provided starter repo and turn it into a **modern, production-ready frontend app** showcasing **React, Next.js, TypeScript, and Tailwind CSS** skills.
 
 ---
 
-## Tasks  
+## 🚀 Tech Stack
 
-### 1. Fix Cards Layout & Responsiveness  
-- Correct the existing card grid layout.  
-- Improve the overall card design (UI/UX sensibility expected).  
-- Ensure the page is fully responsive across devices (desktop, tablet, mobile).  
-
-### 2. Add Navbar (Sticky)  
-- Implement a navigation bar that remains fixed at the top while scrolling.  
-- Design should be clean and responsive.  
-
-### 3. Optimize Page Load & Performance  
-- Implement optimizations such as:  
-  - **Lazy loading** for images and non-critical components.  
-  - **Memoization** to avoid unnecessary re-renders.  
-  - **Skeleton loading screens** for better UX during data fetch.  
-
-### 4. Implement Pagination  
-- Add pagination for the workers listing page.  
-- Each page should load a suitable number of items (e.g., 9–12 cards per page).  
-
-### 5. Service Filters  
-- Implement filters for workers based on **price/day** and **type of service**.  
-- Filters should work seamlessly with pagination.  
-
-### 6. Bug Fixes  
-- Identify and fix any existing issues in `page.tsx` or configuration files.  
-- Resolve console warnings or errors.  
-- Ensure clean and maintainable code following best practices.  
-
-### 7. API Integration  
-- Currently, the workers’ data is being imported directly from `workers.json`.  
-- Your task is to **serve this data via /api/wprkers API route**.  
-- Update the frontend page to fetch this data using `fetch` (or any modern method such as `useEffect`, `useSWR`, or React Query).
-- Donot delete the existing data loading logic, comment it out.  
-- Implement:  
-  - **Loading state** (use skeleton screens).  
-  - **Error handling** (show a friendly error message if API fails).  
-  - **Basic caching or memoization** to prevent redundant calls.  
+* **Next.js 14 (App Router)**
+* **React 18 + TypeScript**
+* **Tailwind CSS** for modern styling
+* **AOS** for scroll animations
+* **Jest + React Testing Library** for unit tests
+* **Vercel** for deployment
 
 ---
 
-## Expectations  
-- Use **TypeScript** and **Tailwind CSS** consistently.  
-- Follow **component-driven development** principles.  
-- Write **clean, readable, and reusable code**.  
-- Optimize for **performance and accessibility**.  
-- Maintain **Git commit history** (no single "final commit").  
+## ⚡ Features Implemented
+
+### Core Features
+
+* 📱 **Responsive UI**: mobile-first design using Tailwind CSS grid system
+* 🎨 **Modern card design**: hover effects, spacing, and badges for service types
+* 🔍 **Sticky Search Bar**: debounced search for smooth filtering
+* 🧩 **Pagination**: Next/Previous buttons with page tracking
+* 💸 **Service Filters**: filter workers by `price/day` and service type
+* 🖼️ **Skeleton Loading Screens**: placeholder cards while fetching data
+* 🌐 **API Integration**: fetched workers data via `/api/workers` route
+* ⚡ **Performance Optimizations**: memoization and reduced unnecessary re-renders
+* ✨ **Scroll Animations (AOS)** for better user experience
+
+### Extra UI/UX Enhancements
+
+* 🖼️ **Responsive cards layout**: grid adapts to mobile, tablet, desktop
+* 🧭 **Sticky Navbar**: navigation bar fixed at top, includes search
+* 📜 **Footer**: quick links, branding, and copyright notice
+* 🧪 **Unit Testing**: example test for WorkersPage using Jest + React Testing Library
 
 ---
 
-## Deliverables  
-1. Fork the repo and work from a branch named: assignment/<your-full-name> (for example: assignment/adarsh-maurya).
-2. Implement improvements and features that demonstrate your mastery of the job requirements (UI polish, responsiveness, Tailwind usage, tests, accessibility, performance).
-3. Push your branch to GitHub, add a clear README, and (strongly recommended) deploy the app (Vercel/Netlify/GH Pages)
-3. Fill in the Google Form with your details for submission.
+## 💻 Getting Started
+
+### 1️⃣ Clone the repo
+
+```bash
+git clone https://github.com/manish-kumar/frontend_dev_assignment.git
+cd <repo-name>
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the development server
+
+```bash
+npm run dev
+```
+
+Visit 👉 [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Evaluation Criteria  
-- Code quality, readability, and structure.  
-- UI/UX improvements and responsiveness.  
-- Correctness of functionality (filters, pagination, sticky navbar, optimisations).  
-- Debugging and problem-solving approach.  
-- Git usage and commit practices.  
-- Handling of API calls, loading states, and error cases.  
+## 🧪 Testing
+
+This project uses **Jest + React Testing Library**.
+
+Run tests with:
+
+```bash
+npm run test
+```
+
+Example test included:
+
+* Renders the **"Our Workers"** heading correctly.
 
 ---
 
-## Notes  
-- You are free to use libraries like **SWR** or **React Query**, but keep the implementation clean.  
-- Focus on **real-world production quality code**, not just quick fixes. 
-- Add comment for any **bug fix or optimization.** 
-- Document any **extra improvements** you make in your submission.
+## 🚀 Deployment (Vercel)
 
-Good luck 🚀  
+1. Push your branch to GitHub.
+2. Go to [Vercel](https://vercel.com/), import your repository.
+3. Configure build settings (Next.js defaults work fine):
+
+   * Build command: `npm run build`
+   * Output directory: `.next`
+4. Deploy 🚀 and get your live link.
+
+---
+
+## 📸 Screenshots
+
+![alt text](image.png)
+![alt text](image-1.png)
+---
+
+## 👨‍💻 Author
+
+**Manish Kumar**
+Frontend Developer | MERN Stack Enthusiast
