@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import SearchBar from './SearchBar'
+import Link from 'next/link'
 
 interface NavbarProps {
   search: string
@@ -17,10 +18,10 @@ export default function Navbar({ search, setSearch }: NavbarProps) {
 
       {/* Navigation Links */}
       <nav className="flex gap-6 font-medium text-gray-700">
-        <a href="/" className="hover:text-indigo-600 transition-colors">Home</a>
-        <a href="/workers" className="hover:text-indigo-600 transition-colors">Workers</a>
-        <a href="/about" className="hover:text-indigo-600 transition-colors">About</a>
-        <a href="/contact" className="hover:text-indigo-600 transition-colors">Contact</a>
+        <Link href="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+        <Link href="/workers" className="hover:text-indigo-600 transition-colors">Workers</Link>
+        <Link href="/about" className="hover:text-indigo-600 transition-colors">About</Link>
+        <Link href="/contact" className="hover:text-indigo-600 transition-colors">Contact</Link>
       </nav>
 
 
