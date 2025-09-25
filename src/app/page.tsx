@@ -2,7 +2,6 @@
 import { WorkerType } from '@/types/workers'
 import { useState, useEffect } from 'react'
 import Loading from './component/Loading'
-import SearchBar from './component/SearchBar'
 import WorkerCard from './component/WorkerCard'
 import PagiButtons from './component/PagiButtons'
 import Navbar from './component/Navbar'
@@ -115,7 +114,7 @@ export default function WorkersPage() {
       ) : (
         //  Reset to first page whenever the search input changes
         <p className="text-center text-gray-700 text-lg mt-10">
-          No workers found for "<span className="font-semibold">{search}</span>"
+          No workers found for <span className="font-semibold">{search}</span>
         </p>
       )}
 

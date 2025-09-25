@@ -1,5 +1,13 @@
 'use client'
-function PagiButtons({ onClick, disabled, children }: any) {
+import React, { ReactNode } from "react";
+
+interface PagiButtonsProps {
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  disabled?: boolean;
+  children: ReactNode;
+}
+
+function PagiButtons({ onClick, disabled, children }: PagiButtonsProps) {
   return (
     <button
       onClick={onClick}
